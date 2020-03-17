@@ -1,3 +1,3 @@
 # kyopro-library
-競プロ用のライブラリです。
-全てのライブラリに前提テンプレは [kyopro-template] です
+競プロ用のライブラリです。<br>
+全てのライブラリの前提テンプレは [kyopro-template](/kyopro-template) です
