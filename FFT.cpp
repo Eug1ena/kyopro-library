@@ -66,4 +66,4 @@ namespace FFT{
     }
 }
 
-verify : https://atcoder.jp/contests/atc001/submissions/14417236
+// verify : https://atcoder.jp/contests/atc001/submissions/14417236
