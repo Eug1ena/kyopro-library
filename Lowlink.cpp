@@ -1,4 +1,4 @@
-namespace lowlink{
+namespace Lowlink{
     vector<vector<pair<int, int>>> roads_l;
 
     vector<int> label, lowlink;

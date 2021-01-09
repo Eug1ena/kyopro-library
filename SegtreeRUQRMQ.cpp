@@ -1,9 +1,9 @@
-struct segtree_RUQ_RMQ{
+struct SegtreeRUQRMQ{
     int sz;
     vector<int> data, lazy;
     vector<bool> is_lazy;
     
-    segtree_RUQ_RMQ(int n){
+    SegtreeRUQRMQ(int n){
         sz = 1;
         while(sz < n) sz *= 2;
         data.resize(sz * 2, INT_MAX);

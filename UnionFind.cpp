@@ -1,9 +1,8 @@
-struct union_find{
+struct UnionFind{
+    int sz;
     vector<int> data;
     
-    union_find(int n){
-        data.resize(n, -1);
-    }
+    UnionFind(int n): sz(n), data(n, -1) { }
     
     int find(int k){
         if(data[k] < 0){
@@ -23,7 +22,19 @@ struct union_find{
         data[b] = a;
     }
     
+    int size(int k){
+        return -data[find(k)];
+    }
+    
     bool is_group(int a, int b){
         return find(a) == find(b);
+    }
+    
+    vector<int> roots(){
+        vector<int> ret;
+        rep(i, sz){
+            if(data[i] < 0) ret.push_back(i);
+        }
+        return ret;
     }
 };

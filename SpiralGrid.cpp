@@ -1,4 +1,4 @@
-vector<pair<int, int>> spiral_grid(int H, int W){
+vector<pair<int, int>> SpiralGrid(int H, int W){
     vector<pair<int, int>> ret;
     rep(i, W){
         ret.push_back({0, i});
