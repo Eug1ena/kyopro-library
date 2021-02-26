@@ -1,9 +1,10 @@
+//#include <atcoder/all>
 #include <bits/stdc++.h>
 using namespace std;
 using lint = long long;
-constexpr lint mod = 998244353;
+constexpr lint mod = 1e9 + 7;
 #define all(x) (x).begin(), (x).end()
-#define bitcount(n) __builtin_popcountl((lint)(n))
+#define bitcount(n) __builtin_popcountll((lint)(n))
 #define fcout cout << fixed << setprecision(15)
 #define highest(x) (63 - __builtin_clzl(x))
 #define rep(i, n) for(int i = 0; i < int(n); i++)
@@ -34,3 +35,10 @@ inline int at(lint i, int j){ return (i >> j) & 1; }
 random_device rnd;
 bool is_in_board(lint y, lint x, lint H, lint W){ return (0 <= y && y < H && 0 <= x && x < W); }
 lint inv2 = power(2, mod - 2, mod);
+
+struct io_init {
+    io_init() {
+      cin.tie(nullptr); cout.tie(nullptr);
+      std::ios::sync_with_stdio(false);
+    }
+} io_init;
