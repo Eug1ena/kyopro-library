@@ -37,4 +37,19 @@ struct UnionFind{
         }
         return ret;
     }
+    
+    vector<vector<int>> groups(){
+        vector<vector<int>> group_list(sz);
+        rep(i, sz){
+            group_list[find(i)].push_back(i);
+        }
+        
+        vector<vector<int>> ret;
+        for(auto& vec: group_list){
+            if(!vec.empty()){
+                ret.push_back(vec);
+            }
+        }
+        return ret;
+    }
 };

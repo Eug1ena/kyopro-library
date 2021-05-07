@@ -44,5 +44,3 @@ namespace Lowlink{
         return is_bridge;
     }
 }
-
-// verify: https://judge.yosupo.jp/submission/21094

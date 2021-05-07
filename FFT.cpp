@@ -65,5 +65,3 @@ namespace FFT{
         return ret;
     }
 }
-
-// verify : https://atcoder.jp/contests/atc001/submissions/14417236

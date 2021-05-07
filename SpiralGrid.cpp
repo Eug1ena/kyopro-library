@@ -16,5 +16,3 @@ vector<pair<int, int>> SpiralGrid(int H, int W){
     }
     return ret;
 }
-
-verify : https://yukicoder.me/submissions/445147
