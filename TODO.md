@@ -7,3 +7,4 @@
 * 行列
 * ローリングハッシュ
 * Aho–Corasick法
+* -1が入る拡張Modint

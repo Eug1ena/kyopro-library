@@ -2,7 +2,7 @@ struct Modint{
     lint x;
     
     Modint(): x(0) {}
-    Modint(lint x): x(x % mod) {}
+    Modint(lint x): x(x >= 0 || x % mod == 0 ? x % mod : mod - (-x) % mod) {}
     
     Modint operator +(Modint a){ return Modint(*this) += a; }
     Modint operator -(Modint a){ return Modint(*this) -= a; }
@@ -62,3 +62,4 @@ istream &operator >>(istream &is, Modint& a){
     a = Modint(x);
     return is;
 }
+

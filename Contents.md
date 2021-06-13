@@ -29,3 +29,7 @@ verify: [https://atcoder.jp/contests/agc053/submissions/21690367](https://atcode
 ### LargestRectangleInHistogram.cpp
 ヒストグラム中の最大長方形。stackを利用したO(N)解法。<br>
 verify: [https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/5428996/Euglena/C++14](https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/5428996/Euglena/C++14)
+
+### Diameter.cpp
+木の直径。<br>
+verify: [https://atcoder.jp/contests/typical90/submissions/23441141](https://atcoder.jp/contests/typical90/submissions/23441141)
