@@ -37,3 +37,23 @@ verify: [https://atcoder.jp/contests/typical90/submissions/23441141](https://atc
 ### BinaryIndexedTree.cpp
 
 一点加算とprefix和の取得ができるBinary Indexed Tree。<br>verify: https://old.yosupo.jp/submission/54164
+
+### SegmentTree.cpp
+
+一般化されたセグメント木。単位元を持つモノイドなら何でも入る。
+
+RSQの場合の例:
+
+```c++
+auto f = [](int a, int b){ return a + b; };
+SegmentTree<int> seg(n, f, 0);
+```
+
+RMQの場合の例:
+
+```c++
+auto f = [](int a, int b){ return min(a, b); };
+SegmentTree<int> seg(n, f, INT_MAX);
+```
+
+verify (RSQ): https://judge.yosupo.jp/submission/54165<br>verify (RMQ): https://judge.yosupo.jp/submission/54166
