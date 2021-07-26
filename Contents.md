@@ -33,3 +33,7 @@ verify: [https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/54289
 ### Diameter.cpp
 木の直径。<br>
 verify: [https://atcoder.jp/contests/typical90/submissions/23441141](https://atcoder.jp/contests/typical90/submissions/23441141)
+
+### BinaryIndexedTree.cpp
+
+一点加算とprefix和の取得ができるBinary Indexed Tree。<br>verify: https://old.yosupo.jp/submission/54164
