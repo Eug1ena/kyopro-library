@@ -66,3 +66,7 @@ verify: [https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/54289
 ### SpiralGrid.cpp
 2次元グリッド上の渦巻き。左上のマスから右向きに進む。返り値のpairは(y, x)の形。<br>
 verify : [https://yukicoder.me/submissions/445147](https://yukicoder.me/submissions/445147)
+
+### InversionNumber.cpp
+
+転倒数。引数には重複の無い数列のみ受け付ける。<br>verify: https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=5726662
