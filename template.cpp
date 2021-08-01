@@ -2,27 +2,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 using lint = long long;
-constexpr lint mod = 1e9 + 7;
+constexpr lint mod = 998244353;
 #define all(x) (x).begin(), (x).end()
 #define bitcount(n) __builtin_popcountll((lint)(n))
 #define fcout cout << fixed << setprecision(15)
-#define highest(x) (63 - __builtin_clzl(x))
+#define highest(x) (63 - __builtin_clzll(x))
 #define rep(i, n) for(int i = 0; i < int(n); i++)
 #define rep2(i, l, r) for(int i = int(l); i < int(r); i++)
 #define repr(i, n) for(int i = int(n) - 1; i >= 0; i--)
 #define repr2(i, l, r) for(int i = int(r) - 1; i >= int(l); i--)
 #define mp(x, y) make_pair(x, y)
 constexpr int inf9 = 1e9; constexpr lint inf18 = 1e18;
-inline void YES(bool condition){ if(condition) cout << "YES" << endl; else cout << "NO" << endl; }
 inline void Yes(bool condition){ if(condition) cout << "Yes" << endl; else cout << "No" << endl; }
-inline void assertNO(bool condition){ if(!condition){ cout << "NO" << endl; exit(0); } }
-inline void assertNo(bool condition){ if(!condition){ cout << "No" << endl; exit(0); } }
-inline void assertm1(bool condition){ if(!condition){ cout << -1 << endl; exit(0); } }
 lint power(lint base, lint exponent, lint module){ if(exponent % 2){ return power(base, exponent - 1, module) * base % module; }else if(exponent){ lint root_ans = power(base, exponent / 2, module); return root_ans * root_ans % module; }else{ return 1; }}
 struct position{ int x, y; }; position mv[4] = {{0, -1}, {1, 0}, {0, 1}, {-1, 0}}; double euclidean(position first, position second){ return sqrt((second.x - first.x) * (second.x - first.x) + (second.y - first.y) * (second.y - first.y)); }
-template<class T, class U> string to_string(pair<T, U> x){ return to_string(x.first) + "," + to_string(x.second); } string to_string(string x){ return x; }
-template<class T> string to_string(complex<T> x){ return to_string(make_pair(x.real(), x.imag())); }
-template<class itr> void array_output(itr start, itr goal){ string ans; for(auto i = start; i != goal; i++) cout << (i == start ? "" : " ") << (*i); if(!ans.empty()) ans.pop_back(); cout << ans << endl; }
+template<class itr> void array_output(itr start, itr goal){ for(auto i = start; i != goal; i++) cout << (i == start ? "" : " ") << (*i); cout << endl; }
 template<class itr> void cins(itr first, itr last){ for(auto i = first; i != last; i++){ cin >> (*i); } }
 template<class T> T gcd(T a, T b){ if(b) return gcd(b, a % b); else return a; }
 template<class T> T lcm(T a, T b){ return a / gcd(a, b) * b; }
@@ -35,10 +29,3 @@ inline int at(lint i, int j){ return (i >> j) & 1; }
 random_device rnd;
 bool is_in_board(lint y, lint x, lint H, lint W){ return (0 <= y && y < H && 0 <= x && x < W); }
 lint inv2 = power(2, mod - 2, mod);
-
-struct io_init {
-    io_init() {
-      cin.tie(nullptr); cout.tie(nullptr);
-      std::ios::sync_with_stdio(false);
-    }
-} io_init;
