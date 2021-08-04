@@ -57,7 +57,15 @@ verify: [https://atcoder.jp/contests/agc053/submissions/21690367](https://atcode
 
 ### FFT.cpp
 FFTによって高速化された多項式の畳み込み。<br>
-verify : [https://atcoder.jp/contests/atc001/submissions/14417236](https://atcoder.jp/contests/atc001/submissions/14417236)
+verify: [https://atcoder.jp/contests/atc001/submissions/14417236](https://atcoder.jp/contests/atc001/submissions/14417236)
+
+### XorConvolution.cpp
+
+高速アダマール変換(FWHT)によって高速化されたxorの畳み込み。<br>高速アダマール変換については [ここ](https://cympfh.cc/aiura/hadamard-xor-convolution) が詳しい。<br>verify: https://judge.yosupo.jp/submission/54616
+
+### F2Linear.cpp
+
+F2線形代数。掃き出し法&rank計算のGaussJordan()と連立方程式を解くLinearEquation()がある。<br>verify (GaussJordan()): https://atcoder.jp/contests/yahoo-procon2019-qual/submissions/24720728<br>verify (LinearEquation()): まだ
 
 ### LargestRectangleInHistogram.cpp
 ヒストグラム中の最大長方形。stackを利用したO(N)解法。<br>

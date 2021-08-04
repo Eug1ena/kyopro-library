@@ -29,3 +29,10 @@ inline int at(lint i, int j){ return (i >> j) & 1; }
 random_device rnd;
 bool is_in_board(lint y, lint x, lint H, lint W){ return (0 <= y && y < H && 0 <= x && x < W); }
 lint inv2 = power(2, mod - 2, mod);
+
+struct io_init {
+   io_init() {
+     cin.tie(nullptr); cout.tie(nullptr);
+     std::ios::sync_with_stdio(false);
+   }
+} io_init;
