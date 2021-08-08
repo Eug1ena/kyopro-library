@@ -46,16 +46,10 @@ verify: [https://judge.yosupo.jp/submission/21094](https://judge.yosupo.jp/submi
 木の直径。<br>
 verify: [https://atcoder.jp/contests/typical90/submissions/23441141](https://atcoder.jp/contests/typical90/submissions/23441141)
 
-## 便利系
-
-### Modint.cpp
-いわゆるModint。加減乗除、逆数、累乗、入出力の機能がある。<br>
-(小さな注意: "10-Modint(5)"はエラーを吐くので"-Modint(5)+10"と表記する)<br>
-verify: [https://atcoder.jp/contests/agc053/submissions/21690367](https://atcoder.jp/contests/agc053/submissions/21690367)
-
-### その他
+## 数学
 
 ### FFT.cpp
+
 FFTによって高速化された多項式の畳み込み。<br>
 verify: [https://atcoder.jp/contests/atc001/submissions/14417236](https://atcoder.jp/contests/atc001/submissions/14417236)
 
@@ -66,6 +60,15 @@ verify: [https://atcoder.jp/contests/atc001/submissions/14417236](https://atcode
 ### F2Linear.cpp
 
 F2線形代数。掃き出し法&rank計算のGaussJordan()と連立方程式を解くLinearEquation()がある。<br>verify (GaussJordan()): https://atcoder.jp/contests/yahoo-procon2019-qual/submissions/24720728<br>verify (LinearEquation()): まだ
+
+## 便利系
+
+### Modint.cpp
+いわゆるModint。加減乗除、逆数、累乗、入出力の機能がある。<br>
+(小さな注意: "10-Modint(5)"はエラーを吐くので"-Modint(5)+10"と表記する)<br>
+verify: [https://atcoder.jp/contests/agc053/submissions/21690367](https://atcoder.jp/contests/agc053/submissions/21690367)
+
+## その他
 
 ### LargestRectangleInHistogram.cpp
 ヒストグラム中の最大長方形。stackを利用したO(N)解法。<br>
@@ -78,3 +81,7 @@ verify : [https://yukicoder.me/submissions/445147](https://yukicoder.me/submissi
 ### InversionNumber.cpp
 
 転倒数。引数には重複の無い数列のみ受け付ける。<br>verify: https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=5726662
+
+### SuffixArray.cpp
+
+Suffix Array。O(|S|log|S|)時間で動く。<br>verify: https://judge.yosupo.jp/submission/55557

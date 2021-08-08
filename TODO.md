@@ -8,3 +8,4 @@
 * ローリングハッシュ
 * Aho–Corasick法
 * -1が入る拡張Modint
+* Dijkstra, BFS, 01BFS
