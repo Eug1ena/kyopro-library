@@ -8,6 +8,8 @@ struct SegmentTree{
     F f;
     T id;
     
+    SegmentTree(): sz(1), f([](T a, T b){ return a + b; }), data(2, id) {}
+    
     SegmentTree(int n, F f, T id): f(f), id(id) {
         sz = 1;
         while(sz < n) sz *= 2;
