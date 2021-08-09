@@ -22,8 +22,8 @@ SegmentTree<int> seg(n, f, INT_MAX);
 
 verify (RSQ): https://judge.yosupo.jp/submission/54165<br>verify (RMQ): https://judge.yosupo.jp/submission/54166
 
-### SegtreeRUQRMQ.cpp
-RUQとRMQに対応した遅延セグメント木。<br>
+### LazySegmentTree.cpp
+抽象化された遅延セグメント木。詳細な使い方は [別紙](HowToUseLazySeg.md) 参照。<br>
 
 ### BinaryIndexedTree.cpp
 
