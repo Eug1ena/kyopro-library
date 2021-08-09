@@ -38,17 +38,22 @@ verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcode
 
 ## グラフ
 
+### LCA.cpp
+
+最小共通祖先。セグ木も使っているので注意。<br>verify: https://judge.yosupo.jp/submission/55637
+
+### GraphCollection.cpp
+
+最短経路。BFS, 01BFS, Dijkstraが利用できる。<br>移動できない頂点はdist[v]=-1になる。<br>verify (BFS): https://onlinejudge.u-aizu.ac.jp/recent_judges/ALDS1_11_C/judge/5762841/Euglena/C++14<br>verify (01BFS): https://atcoder.jp/contests/arc005/submissions/24916982<br>verify (Dijkstra): https://judge.yosupo.jp/submission/55645
+
 ### Lowlink.cpp
+
 O(E)でグラフの橋を検出する。返り値の配列は"arr[i]=辺iが橋か"。<br>
 verify: [https://judge.yosupo.jp/submission/21094](https://judge.yosupo.jp/submission/21094)
 
 ### Diameter.cpp
 木の直径。<br>
 verify: [https://atcoder.jp/contests/typical90/submissions/23441141](https://atcoder.jp/contests/typical90/submissions/23441141)
-
-### LCA.cpp
-
-最小共通祖先。セグ木も使っているので注意。<br>verify: https://judge.yosupo.jp/submission/55637
 
 ## 数学
 
