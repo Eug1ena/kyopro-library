@@ -46,6 +46,10 @@ verify: [https://judge.yosupo.jp/submission/21094](https://judge.yosupo.jp/submi
 木の直径。<br>
 verify: [https://atcoder.jp/contests/typical90/submissions/23441141](https://atcoder.jp/contests/typical90/submissions/23441141)
 
+### LCA.cpp
+
+最小共通祖先。セグ木も使っているので注意。<br>verify: https://judge.yosupo.jp/submission/55637
+
 ## 数学
 
 ### FFT.cpp
