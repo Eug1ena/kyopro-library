@@ -47,13 +47,6 @@ auto p = [](int a, int len) { return a * len; };
 LazySegmentTree<lint> seg(n, f, g, h, p, 0);
 ```
 
-```c++
-auto f = [](int a, int b){ return min(a, b); };
-SegmentTree<int> seg(n, f, INT_MAX);
-```
-
-
-
 ### verify
 
 区間add + 区間min: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/DSL_2_H/judge/5763734/C++14<br>区間add + 区間sum: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/DSL_2_G/judge/5763735/C++14<br>区間update + 区間min: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/DSL_2_F/judge/5763746/C++14<br>区間update + 区間sum: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/DSL_2_I/judge/5763759/C++14
