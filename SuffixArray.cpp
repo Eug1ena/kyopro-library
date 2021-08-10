@@ -59,3 +59,30 @@ vector<int> SuffixArray(string s){
     ans.erase(ans.begin());
     return ans;
 }
+
+vector<int> LCPArray(string &s, vector<int> &SA){
+    int n = int(s.size());
+    
+    vector<int> rank(n);
+    rep(i, n){
+        rank[SA[i]] = i;
+    }
+    
+    vector<int> lcp(n - 1);
+    int h = 0;
+    rep(i, n){
+        if(rank[i] == 0) continue;
+        int prev = SA[rank[i] - 1];
+        
+        if(h > 0) h--;
+        while(i + h < n && prev + h < n){
+            if(s[i + h] != s[prev + h]){
+                break;
+            }
+            h++;
+        }
+        
+        lcp[rank[i] - 1] = h;
+    }
+    return lcp;
+}

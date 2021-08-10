@@ -97,4 +97,4 @@ verify : [https://yukicoder.me/submissions/445147](https://yukicoder.me/submissi
 
 ### SuffixArray.cpp
 
-Suffix Array。O(|S|log|S|)時間で動く。<br>verify: https://judge.yosupo.jp/submission/55557
+Suffix ArrayとLCP Arrayを計算する。それぞれO(|S|log|S|), O(|S|)時間で動く。<br>verify (SA): https://judge.yosupo.jp/submission/55557<br>verify (LCP): https://judge.yosupo.jp/submission/55834
