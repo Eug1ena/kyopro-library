@@ -25,6 +25,10 @@ verify (RSQ): https://judge.yosupo.jp/submission/54165<br>verify (RMQ): https://
 ### LazySegmentTree.cpp
 抽象化された遅延セグメント木。詳細な使い方は [別紙](HowToUseLazySeg.md) 参照。<br>
 
+### SegmentTreeBeats.cpp
+
+区間chmin/chmax/addと区間sumの取得ができるセグメント木。<br>verify: https://judge.yosupo.jp/submission/55830
+
 ### BinaryIndexedTree.cpp
 
 一点加算とprefix和の取得ができるBinary Indexed Tree。<br>verify: https://old.yosupo.jp/submission/54164
