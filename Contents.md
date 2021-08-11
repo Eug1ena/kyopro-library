@@ -44,7 +44,7 @@ verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcode
 
 ### LCA.cpp
 
-最小共通祖先。セグ木も使っているので注意。<br>verify: https://judge.yosupo.jp/submission/55637
+最小共通祖先と木上の距離。セグ木も使っているので注意。<br>verify: https://atcoder.jp/contests/abc014/submissions/24947308
 
 ### GraphCollection.cpp
 
