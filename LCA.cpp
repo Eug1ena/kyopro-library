@@ -91,8 +91,12 @@ struct LCA{
         }
     }
     
-    int dist(int a, int b){
+    int lca(int a, int b){
         if(id[a] > id[b]) swap(a, b);
         return rmq.query(id[a], id[b] + 1);
+    }
+    
+    int dist(int a, int b){
+        return depth[a] + depth[b] - depth[lca(a, b)] * 2;
     }
 };
