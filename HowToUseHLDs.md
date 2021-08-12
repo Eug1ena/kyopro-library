@@ -2,11 +2,11 @@
 
 ### HLD.cpp
 
-パス上の **一点更新** と **区間取得** に対応したHL分解。可換性を **要求しない** 。<br>引数はSegmentTree.cppと同じ。<br>辺にコストがある場合はis_edge = trueにする。<br>verify (辺コスト): https://yukicoder.me/submissions/688261
+パス上の **一点更新** と **区間取得** に対応したHL分解。可換性を **要求しない** 。<br>引数はSegmentTree.cppと同じ。<br>辺にコストがある場合はis_edge = trueにする。<br>verify (可換): https://judge.yosupo.jp/submission/56206
 
 ### HLDCommutative.cpp
 
-パス上の **一点更新** と **区間取得** に対応したHL分解。可換性を **要求する** 。<br>引数はSegmentTree.cppと同じ。<br>辺にコストがある場合はis_edge = trueにする。<br>verify (辺コスト): https://codeforces.com/contest/593/submission/125571364
+パス上の **一点更新** と **区間取得** に対応したHL分解。可換性を **要求する** 。<br>引数はSegmentTree.cppと同じ。<br>辺にコストがある場合はis_edge = trueにする。<br>verify: https://judge.yosupo.jp/submission/56194<br>verify (辺コスト): https://codeforces.com/contest/593/submission/125571364
 
 ### LazyHLDCommutative.cpp
 

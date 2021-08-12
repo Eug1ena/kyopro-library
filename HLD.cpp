@@ -9,7 +9,6 @@ struct SegmentTree{
     T id;
     
     SegmentTree() {}
-    
     SegmentTree(int n, F f, T id): f(f), id(id) {
         sz = 1;
         while(sz < n) sz *= 2;
@@ -148,6 +147,7 @@ struct HLD{
             ans = f(ans, seg_rev_query(in[top], in[s] + 1));
             s = par[top];
         }
+//        cout << seg_rev_query(in[t] + 1, in[s] + 1) << endl;
         ans = f(ans, seg_rev_query(in[t] + 1, in[s] + 1));
         return ans;
     }
@@ -188,6 +188,6 @@ struct HLD{
 
     void update(int k, T x){
         seg.update(in[k], x);
-        seg_rev.update(sz - in[k], x);
+        seg_rev.update(sz - in[k] - 1, x);
     }
 };
