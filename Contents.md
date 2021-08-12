@@ -40,6 +40,10 @@ Union-Find木。サイズの取得も可能。<br>
 辺情報の増えたUnion-Find木。辺の本数の取得が可能。<br>
 verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcoder.jp/contests/arc111/submissions/19296389)
 
+### HLD.cpp, HLDCommutative.cpp, LazyHLDCommutative.cpp
+
+それぞれ 一点更新区間取得、一点更新区間取得(可換性要求)、区間更新区間取得(可換性要求) のHL分解。<br>可換性を要求する方はしない方より更新が2倍速い。<br>詳細は [別紙](HowToUseHLDs.md) 参照のこと。
+
 ## グラフ
 
 ### LCA.cpp
