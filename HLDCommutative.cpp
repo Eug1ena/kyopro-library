@@ -43,7 +43,7 @@ struct SegmentTree{
     }
 };
 
-template<class T, class Op = T>
+template<class T>
 struct HLDCommutative{
     using F = function<T(T, T)>;
     
