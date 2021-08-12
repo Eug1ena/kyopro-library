@@ -3,8 +3,9 @@ struct Matrix{
     int h, w;
     vector<vector<T>> data;
     
-    Matrix(int n) : h(n), w(n), data(n, vector<T>(n)){};
-    Matrix(int h, int w) : h(h), w(w), data(h, vector<T>(w)){};
+    Matrix(){ Matrix(1); }
+    Matrix(int n) : h(n), w(n), data(n, vector<T>(n)) {}
+    Matrix(int h, int w) : h(h), w(w), data(h, vector<T>(w)) {}
     
     Matrix operator +(Matrix a){ return Matrix(*this) += a; }
     Matrix operator -(Matrix a){ return Matrix(*this) -= a; }
@@ -25,6 +26,7 @@ struct Matrix{
     }
     
     Matrix& operator *=(Matrix a){
+        assert(w == a.h);
         Matrix ans(h, a.w);
         rep(i, h) rep(j, a.w){
             ans[i][j] = 0;
@@ -50,3 +52,4 @@ struct Matrix{
         return ans;
     }
 };
+
