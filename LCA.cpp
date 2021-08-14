@@ -8,8 +8,7 @@ struct SegmentTree{
     F f;
     T id;
     
-    SegmentTree(): sz(1), f([](T a, T b){ return a + b; }), data(2, id) {}
-    
+    SegmentTree() = default;
     SegmentTree(int n, F f, T id): f(f), id(id) {
         sz = 1;
         while(sz < n) sz *= 2;
@@ -45,7 +44,7 @@ struct SegmentTree{
 
 struct LCA{
     int sz;
-    vector<vector<int>> graph;
+    Graph<int> graph;
     
     vector<vector<int>> child;
     vector<int> tour, depth, id;
@@ -67,18 +66,13 @@ struct LCA{
         }
     }
     
-    LCA(int n): sz(n), graph(n) {}
-    
-    void add_edge(int a, int b){
-        graph[a].push_back(b);
-        graph[b].push_back(a);
-    }
-    
-    void build(){
+    LCA(Graph<int> g): graph(g) {
+        sz = int(g.size());
+        
         tour.clear();
-        child = vector<vector<int>>(sz);
-        depth = vector<int>(sz);
-        id = vector<int>(sz);
+        child.assign(sz, {});
+        depth.assign(sz, 0);
+        id.assign(sz, 0);
         
         depth[0] = 0;
         dfs(0, -1);

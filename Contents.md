@@ -46,9 +46,13 @@ verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcode
 
 ## グラフ
 
+### GraphTemplate.cpp
+
+グラフライブラリのテンプレート。
+
 ### LCA.cpp
 
-最小共通祖先と木上の距離。セグ木も使っているので注意。<br>verify: https://atcoder.jp/contests/abc014/submissions/24947308
+最小共通祖先と木上の距離。セグ木も使っているので注意。<br>verify: https://atcoder.jp/contests/abc014/submissions/25003425
 
 ### GraphCollection.cpp
 
