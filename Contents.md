@@ -60,7 +60,7 @@ verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcode
 
 ### Lowlink.cpp
 
-O(V+E)でグラフの橋を検出する。is_bridge[i]="辺iが橋か"。<br>非連結だったり多重辺があってもok。<br>verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/GRL_3_A/judge/5782944/C++17
+O(V+E)でグラフの橋・関節点を検出する。is_bridge[i]="辺iが橋か"。<br>非連結だったり多重辺があってもok。<br>verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/GRL_3_A/judge/5782944/C++17
 
 ### Diameter.cpp
 木の直径。<br>
