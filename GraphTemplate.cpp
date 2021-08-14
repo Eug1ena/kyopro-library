@@ -1,6 +1,18 @@
 template<class T = int>
+struct Edge{
+    int from, to;
+    T cost;
+
+    Edge() = default;
+    Edge(int from, int to, T cost = 1) : from(from), to(to), cost(cost) {}
+
+    operator int() const { return to; }
+};
+
+template<class T = int>
 struct Graph {
     vector<vector<Edge<T>>> g;
+    T INF = numeric_limits<T>::max() / 4;
 
     Graph() = default;
 
