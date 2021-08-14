@@ -94,10 +94,6 @@ verify: [https://atcoder.jp/contests/agc053/submissions/21690367](https://atcode
 ヒストグラム中の最大長方形。stackを利用したO(N)解法。<br>
 verify: [https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/5428996/Euglena/C++14](https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/5428996/Euglena/C++14)
 
-### SpiralGrid.cpp
-2次元グリッド上の渦巻き。左上のマスから右向きに進む。返り値のpairは(y, x)の形。<br>
-verify : [https://yukicoder.me/submissions/445147](https://yukicoder.me/submissions/445147)
-
 ### InversionNumber.cpp
 
 転倒数。引数には重複の無い数列のみ受け付ける。<br>verify: https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=5726662
