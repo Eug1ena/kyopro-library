@@ -64,7 +64,7 @@ O(V+E)でグラフの橋を検出する。is_bridge[i]="辺iが橋か"。<br>非
 
 ### Diameter.cpp
 木の直径。<br>
-verify: [https://atcoder.jp/contests/typical90/submissions/23441141](https://atcoder.jp/contests/typical90/submissions/23441141)
+verify: https://atcoder.jp/contests/typical90/submissions/25008504
 
 ## 数学
 
