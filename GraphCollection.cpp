@@ -1,9 +1,8 @@
 template<class T>
 vector<T> BFS(Graph<T> graph, int s){
     int n = int(graph.size());
-    T INF = (numeric_limits<T>::max()) / 4;
    
-    vector<T> dist(n, INF);
+    vector<T> dist(n, graph.INF);
     dist[s] = 0;
     queue<int> que;
     que.push(s);
@@ -12,7 +11,7 @@ vector<T> BFS(Graph<T> graph, int s){
         int at = que.front();
         que.pop();
         for(Edge e: graph[at]){
-            if(dist[e.to] == INF){
+            if(dist[e.to] == graph.INF){
                 dist[e.to] = dist[at] + 1;
                 que.push(e.to);
             }
@@ -24,16 +23,15 @@ vector<T> BFS(Graph<T> graph, int s){
 template<class T>
 vector<T> BFS01(Graph<T> graph, int s){
     int n = int(graph.size());
-    T INF = (numeric_limits<T>::max()) / 4;
     
-    vector<T> dist(n, INF);
+    vector<T> dist(n, graph.INF);
     dist[s] = 0;
     deque<pair<int, T>> que;
     que.push_back({s, 0});
     
     while(!que.empty()){
         auto top = que.front();
-        que.pop_back();
+        que.pop_front();
         int at = top.first;
         T cost = top.second;
         if(dist[at] < cost) continue;
@@ -55,9 +53,8 @@ vector<T> BFS01(Graph<T> graph, int s){
 template<class T>
 vector<T> Dijkstra(Graph<T> graph, int s){
     int n = int(graph.size());
-    T INF = (numeric_limits<T>::max()) / 4;
     
-    vector<T> dist(n, INF);
+    vector<T> dist(n, graph.INF);
     dist[s] = 0;
     using P = pair<T, int>;
     priority_queue<P, vector<P>, greater<P>> que;

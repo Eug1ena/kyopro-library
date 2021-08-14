@@ -52,7 +52,7 @@ verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcode
 
 ### GraphCollection.cpp
 
-最短経路。BFS, 01BFS, Dijkstraが利用できる。<br>移動できない頂点はdist[v]=-1になる。<br>**現在改定中 / ↓のverifyは古いもの**<br>verify (BFS): https://onlinejudge.u-aizu.ac.jp/recent_judges/ALDS1_11_C/judge/5762841/Euglena/C++14<br>verify (01BFS): https://atcoder.jp/contests/arc005/submissions/24916982<br>verify (Dijkstra): https://judge.yosupo.jp/submission/55645
+最短経路。BFS, 01BFS, Dijkstraが利用できる。<br>移動できない頂点はdist[v]=-1になる。<br>C++14以前では動作しない。( [テンプレート推論 ](https://cpprefjp.github.io/lang/cpp17/type_deduction_for_class_templates.html)をしているため)<br>erify (BFS): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/ALDS1_11_C/judge/5782056/C++17<br>verify (01BFS): https://atcoder.jp/contests/arc005/submissions/25002875<br>verify (Dijkstra):https://judge.yosupo.jp/submission/56419
 
 ### Lowlink.cpp
 
