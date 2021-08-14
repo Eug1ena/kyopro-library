@@ -1,46 +1,51 @@
-namespace Lowlink{
-    vector<vector<pair<int, int>>> roads_l;
+struct Lowlink{
+    Graph<int> graph;
 
-    vector<int> label, lowlink;
-    vector<bool> is_bridge;
+    vector<int> in, low;
+    vector<bool> is_bridge, is_articulation;
 
-    int dfs(int now, int back){
-        lowlink[now] = label[now];
+    void dfs(int at, int back_id, int &num){
+        in[at] = low[at] = num;
+        num++;
         
-        int label_num = label[now];
-        for(auto to: roads_l[now]){
-            if(to.second == back){
+        int cnt = 0;
+        for(auto e: graph[at]){
+            if(e.id == back_id) continue;
+            
+            int to = e.to;
+            if(in[to] != -1){
+                low[at] = min(low[at], in[to]);
                 continue;
             }
-            if(label[to.first] == -1){
-                label[to.first] = label_num + 1;
-                label_num = dfs(to.first, to.second);
-                if(label[now] < lowlink[to.first]){
-                    is_bridge[to.second] = true;
-                }
+            
+            dfs(to, e.id, num);
+            if(in[at] < low[to]){
+                is_bridge[e.id] = true;
             }
-            lowlink[now] = min(lowlink[now], lowlink[to.first]);
-        }
-        return label_num;
-    }
-
-    vector<bool> get_bridge(int N, vector<pair<int, int>> edges){
-        roads_l.resize(N);
-        int cnt = 0;
-        for(auto i: edges){
-            roads_l[i.first].push_back({i.second, cnt});
-            roads_l[i.second].push_back({i.first, cnt});
+            if(in[at] <= low[to]){
+                is_articulation[at] = true;
+            }
+            low[at] = min(low[at], low[to]);
+            
             cnt++;
         }
-        label = vector<int>(N, -1);
-        lowlink = vector<int>(N, -1);
-        is_bridge = vector<bool>(edges.size(), false);
-        rep(i, N){
-            if(label[i] == -1){
-                label[i] = 0;
-                dfs(i, -1);
-            }
+        if(back_id == -1){
+            is_articulation[at] = (cnt >= 2);
         }
-        return is_bridge;
     }
-}
+
+    Lowlink(Graph<int> g): graph(g){
+        int n = int(g.size());
+        
+        in.assign(n, -1);
+        low.assign(n, -1);
+        is_bridge.assign(g.edge_cnt, false);
+        is_articulation.assign(n, false);
+        
+        rep(i, n){
+            if(in[i] != -1) continue;
+            int tmp = 0;
+            dfs(i, -1, tmp);
+        }
+    }
+};

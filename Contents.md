@@ -48,7 +48,7 @@ verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcode
 
 ### GraphTemplate.cpp
 
-グラフライブラリのテンプレート。
+グラフライブラリのテンプレート。<br>以下のグラフライブラリは一部C++14以前では動作しない。( [テンプレート推論 ](https://cpprefjp.github.io/lang/cpp17/type_deduction_for_class_templates.html)をしているため)<br>
 
 ### LCA.cpp
 
@@ -56,12 +56,11 @@ verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcode
 
 ### GraphCollection.cpp
 
-最短経路。BFS, 01BFS, Dijkstraが利用できる。<br>移動できない頂点はdist[v]=-1になる。<br>C++14以前では動作しない。( [テンプレート推論 ](https://cpprefjp.github.io/lang/cpp17/type_deduction_for_class_templates.html)をしているため)<br>erify (BFS): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/ALDS1_11_C/judge/5782056/C++17<br>verify (01BFS): https://atcoder.jp/contests/arc005/submissions/25002875<br>verify (Dijkstra):https://judge.yosupo.jp/submission/56419
+最短経路。BFS, 01BFS, Dijkstraが利用できる。<br>移動できない頂点はdist[v]=-1になる。<br>erify (BFS): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/ALDS1_11_C/judge/5782056/C++17<br>verify (01BFS): https://atcoder.jp/contests/arc005/submissions/25002875<br>verify (Dijkstra):https://judge.yosupo.jp/submission/56419
 
 ### Lowlink.cpp
 
-O(E)でグラフの橋を検出する。返り値の配列は"arr[i]=辺iが橋か"。<br>
-verify: [https://judge.yosupo.jp/submission/21094](https://judge.yosupo.jp/submission/21094)
+O(V+E)でグラフの橋を検出する。is_bridge[i]="辺iが橋か"。<br>非連結だったり多重辺があってもok。<br>verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/GRL_3_A/judge/5782944/C++17
 
 ### Diameter.cpp
 木の直径。<br>
