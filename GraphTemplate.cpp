@@ -27,12 +27,12 @@ public:
     }
     
     void add_directed_edge(int from, int to, T cost = 1){
-        g[from].push_back({from, to, cost, edge_cnt++});
+        g[from].push_back(Edge(from, to, cost, edge_cnt++));
     }
     
     void add_edge(int from, int to, T cost = 1){
-        g[from].push_back({from, to, cost, edge_cnt});
-        g[to].push_back({to, from, cost, edge_cnt++});
+        g[from].push_back(Edge(from, to, cost, edge_cnt));
+        g[to].push_back(Edge(to, from, cost, edge_cnt++));
     }
     
     vector<Edge<T>>& operator [](int k){
