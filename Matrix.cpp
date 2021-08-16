@@ -43,7 +43,8 @@ struct Matrix{
     }
     
     Matrix pow(lint exp){
-        Matrix ans(1), powed = (*this);
+        assert(h == w);
+        Matrix ans(E(h)), powed = (*this);
         while(exp){
             if(exp % 2) ans *= powed;
             powed *= powed;
@@ -51,5 +52,21 @@ struct Matrix{
         }
         return ans;
     }
+    
+    void output(){
+        rep(i, h){
+            rep(j, w){
+                cout << (j == 0 ? "" : " ") << data[i][j];
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+    
+    Matrix E(int n){
+        Matrix ans(n);
+        rep(i, n) ans[i][i] = 1;
+        return ans;
+    }
 };
-
+ 
