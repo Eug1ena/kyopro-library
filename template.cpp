@@ -20,7 +20,7 @@ template<class itr> void array_output(itr start, itr goal){ for(auto i = start; 
 template<class itr> void cins(itr first, itr last){ for(auto i = first; i != last; i++){ cin >> (*i); } }
 template<class T> T gcd(T a, T b){ if(b) return gcd(b, a % b); else return a; }
 template<class T> T lcm(T a, T b){ return a / gcd(a, b) * b; }
-struct combination{ vector<lint> fact, inv; combination(int sz) : fact(sz + 1), inv(sz + 1){ fact[0] = 1; for(int i = 1; i <= sz; i++){ fact[i] = fact[i - 1] * i % mod; } inv[sz] = power(fact[sz], mod - 2, mod); for(int i = sz - 1; i >= 0; i--){ inv[i] = inv[i + 1] * (i + 1) % mod; } } lint P(int n, int r){ if(r < 0 || n < r) return 0; return (fact[n] * inv[n - r] % mod); } lint C(int p, int q){ if(q < 0 || p < q) return 0; return (fact[p] * inv[q] % mod * inv[p - q] % mod); } };
+namespace comb{ vector<lint> fact, factinv; void comb_init(int sz){ fact.resize(sz + 1); factinv.resize(sz + 1); fact[0] = 1; for(int i = 1; i <= sz; i++){ fact[i] = fact[i - 1] * i % mod; } factinv[sz] = power(fact[sz], mod - 2, mod); for(int i = sz - 1; i >= 0; i--){ factinv[i] = factinv[i + 1] * (i + 1) % mod; } } lint P(int n, int r){ if(r < 0 || n < r) return 0; return (fact[n] * factinv[n - r] % mod); } lint C(int p, int q){ if(q < 0 || p < q) return 0; return (fact[p] * factinv[q] % mod * factinv[p - q] % mod); } };
 template<class itr> bool next_sequence(itr first, itr last, int max_bound){ itr now = last; while(now != first){ now--; (*now)++; if((*now) == max_bound){ (*now) = 0; }else{ return true; } } return false; }
 template<class itr, class itr2> bool next_sequence2(itr first, itr last, itr2 first2, itr2 last2){ itr now = last; itr2 now2 = last2; while(now != first){ now--, now2--; (*now)++; if((*now) == (*now2)){ (*now) = 0; }else{ return true; } } return false; }
 template<class T> bool chmax(T &a, const T &b){ if(a < b){ a = b; return 1; } return 0; }
@@ -36,3 +36,7 @@ struct io_init {
      std::ios::sync_with_stdio(false);
    }
 } io_init;
+
+int main(){
+    
+}
