@@ -81,6 +81,10 @@ verify: [https://atcoder.jp/contests/atc001/submissions/14417236](https://atcode
 
 F2線形代数。掃き出し法&rank計算のGaussJordan()と連立方程式を解くLinearEquation()がある。<br>verify (GaussJordan()): https://atcoder.jp/contests/yahoo-procon2019-qual/submissions/24720728<br>verify (LinearEquation()): まだ
 
+### PowerSeries.cpp
+
+形式的冪級数。積はO(N^2)時間。<br>verify: https://atcoder.jp/contests/abl/submissions/25137726
+
 ## 便利系
 
 ### Modint.cpp

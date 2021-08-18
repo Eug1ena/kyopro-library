@@ -28,7 +28,7 @@ struct Modint{
         return *this;
     }
     
-    Modint operator /=(Modint a){
+    Modint& operator /=(Modint a){
         (*this) *= a.inv();
         return *this;
     }
