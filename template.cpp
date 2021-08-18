@@ -27,7 +27,7 @@ template<class T> bool chmax(T &a, const T &b){ if(a < b){ a = b; return 1; } re
 template<class T> bool chmin(T &a, const T &b){ if(b < a){ a = b; return 1; } return 0; }
 inline int at(lint i, int j){ return (i >> j) & 1; }
 random_device rnd;
-bool is_in_board(lint y, lint x, lint H, lint W){ return (0 <= y && y < H && 0 <= x && x < W); }
+bool is_inside(lint y, lint x, lint H, lint W){ return (0 <= y && y < H && 0 <= x && x < W); }
 lint inv2 = power(2, mod - 2, mod);
 
 struct io_init {
