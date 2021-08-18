@@ -14,7 +14,6 @@ constexpr lint mod = 998244353;
 #define mp(x, y) make_pair(x, y)
 constexpr int inf9 = 1e9; constexpr lint inf18 = 1e18;
 inline void Yes(bool condition){ if(condition) cout << "Yes" << endl; else cout << "No" << endl; }
-lint power(lint base, lint exponent, lint module){ if(exponent % 2){ return power(base, exponent - 1, module) * base % module; }else if(exponent){ lint root_ans = power(base, exponent / 2, module); return root_ans * root_ans % module; }else{ return 1; }}
 template<class itr> void array_output(itr start, itr goal){ for(auto i = start; i != goal; i++) cout << (i == start ? "" : " ") << (*i); cout << endl; }
 template<class itr> void cins(itr first, itr last){ for(auto i = first; i != last; i++){ cin >> (*i); } }
 template<class T> T gcd(T a, T b){ if(b) return gcd(b, a % b); else return a; }
