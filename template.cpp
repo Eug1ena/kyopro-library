@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 using lint = long long;
-constexpr lint mod = 998244353;
+constexpr lint mod = 1e9 + 7;
 #define all(x) (x).begin(), (x).end()
 #define bitcount(n) __builtin_popcountll((lint)(n))
 #define fcout cout << fixed << setprecision(15)
@@ -21,7 +21,8 @@ template<class T> T lcm(T a, T b){ return a / gcd(a, b) * b; }
 namespace combination{ vector<lint> fact, factinv;  lint get_inv(lint x){ lint a = 1, exp = mod - 2; while(exp){ if(exp % 2) a = (a * x) % mod; x = (x * x) % mod; exp /= 2; } return a; } void combination_init(int sz){ fact.resize(sz + 1); factinv.resize(sz + 1); fact[0] = 1; for(int i = 1; i <= sz; i++){ fact[i] = fact[i - 1] * i % mod; } factinv[sz] = get_inv(fact[sz]); for(int i = sz - 1; i >= 0; i--){ factinv[i] = factinv[i + 1] * (i + 1) % mod; } } lint P(int n, int r){ if(r < 0 || n < r) return 0; return (fact[n] * factinv[n - r] % mod); } lint C(int p, int q){ if(q < 0 || p < q) return 0; return (fact[p] * factinv[q] % mod * factinv[p - q] % mod); } };
 template<class T> bool chmax(T &a, const T &b){ if(a < b){ a = b; return 1; } return 0; }
 template<class T> bool chmin(T &a, const T &b){ if(b < a){ a = b; return 1; } return 0; }
-inline int at(lint i, int j){ return (i >> j) & 1; }
+inline int has(lint i, int j){ return (i >> j) & 1; }
+int dy[4] = {1, 0, -1, 0}; int dx[4] = {0, 1, 0, -1};
 bool is_inside(lint y, lint x, lint H, lint W){ return (0 <= y && y < H && 0 <= x && x < W); }
 
 struct io_init {
