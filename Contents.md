@@ -105,3 +105,8 @@ verify: [https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/54289
 ### SuffixArray.cpp
 
 Suffix ArrayとLCP Arrayを計算する。それぞれO(|S|log|S|), O(|S|)時間で動く。<br>verify (SA): https://judge.yosupo.jp/submission/55557<br>verify (LCP): https://judge.yosupo.jp/submission/55834
+
+### RollingHash.cpp
+
+ローリングハッシュ。<br>verify: https://onlinejudge.u-aizu.ac.jp/problems/ALDS1_14_B
+
