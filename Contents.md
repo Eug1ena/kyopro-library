@@ -4,7 +4,7 @@
 
 ### SegmentTree.cpp
 
-一般化されたセグメント木。単位元を持つモノイドなら何でも入る。
+抽象化されたセグメント木。モノイドなら何でも入る。
 
 RSQの場合の例:
 
@@ -24,6 +24,18 @@ verify (RSQ): https://judge.yosupo.jp/submission/54165<br>verify (RMQ): https://
 
 ### LazySegmentTree.cpp
 抽象化された遅延セグメント木。詳細な使い方は [別紙](HowToUseLazySeg.md) 参照。<br>
+
+### DualSegmentTree.cpp
+
+双対セグ木。半群なら何でも入る。
+
+RUQの場合の例:
+
+```c++
+DualSegmentTree<int> seg(n, [](int a, int b){ return b; });
+```
+
+verify (RUQ): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/DSL_2_D/judge/5843123/C++17
 
 ### SegmentTreeBeats.cpp
 

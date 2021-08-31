@@ -24,7 +24,7 @@ LazySegmentTree<int> seg(n, f, g, h, p, INT_MAX);
 ```c++
 auto f = [](int a, int b) { return a + b; };
 auto p = [](int a, int len) { return a * len; };
-LazySegmentTree<lint> seg(n, f, f, f, p, 0);
+LazySegmentTree<int> seg(n, f, f, f, p, 0);
 ```
 
 区間update + 区間min: 
@@ -44,7 +44,7 @@ auto f = [](int a, int b) { return a + b; };
 auto g = [](int a, int b) { return b; };
 auto h = [](int a, int b) { return b; };
 auto p = [](int a, int len) { return a * len; };
-LazySegmentTree<lint> seg(n, f, g, h, p, 0);
+LazySegmentTree<int> seg(n, f, g, h, p, 0);
 ```
 
 ### verify
