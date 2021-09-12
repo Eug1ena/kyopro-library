@@ -45,6 +45,11 @@ verify (RUQ): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/
 
 一点加算とprefix和の取得ができるBinary Indexed Tree。<br>verify: https://old.yosupo.jp/submission/54164
 
+### SparseTable.cpp
+
+抽象化されたSparse Table。
+verify: https://judge.yosupo.jp/submission/59891
+
 ### UnionFind.cpp
 Union-Find木。サイズの取得も可能。<br>
 
