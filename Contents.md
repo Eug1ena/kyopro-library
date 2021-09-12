@@ -47,8 +47,7 @@ verify (RUQ): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/
 
 ### SparseTable.cpp
 
-抽象化されたSparse Table。
-verify: https://judge.yosupo.jp/submission/59891
+抽象化されたSparse Table。<br>verify: https://judge.yosupo.jp/submission/59897
 
 ### UnionFind.cpp
 Union-Find木。サイズの取得も可能。<br>

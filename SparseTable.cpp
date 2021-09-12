@@ -2,12 +2,13 @@ template<class T>
 struct SparseTable{
     using F = function<T(T, T)>;
     F f;
+    T id;
     
     int sz;
     vector<vector<T>> data;
     vector<int> logs;
     
-    SparseTable(vector<T> a, F f): f(f) {
+    SparseTable(vector<T> a, F f, T id): f(f), id(id) {
         sz = int(a.size());
         
         logs.resize(sz + 1);
@@ -29,6 +30,7 @@ struct SparseTable{
     }
     
     T query(int l, int r){
+        if(l >= r) return id;
         int lg = logs[r - l];
         return f(data[lg][l], data[lg][r - (1 << lg)]);
     }
