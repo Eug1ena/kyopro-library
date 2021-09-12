@@ -3,10 +3,10 @@ struct Edge{
     int from, to;
     T cost;
     int id;
- 
+    
     Edge() = default;
     Edge(int from, int to, T cost = 1, int id = -1) : from(from), to(to), cost(cost), id(id) {}
- 
+    
     operator int() const { return to; }
 };
 
@@ -17,13 +17,13 @@ private:
 public:
     int edge_cnt = 0;
     T INF = numeric_limits<T>::max() / 4;
- 
+    
     Graph() = default;
- 
+    
     explicit Graph(int n) : g(n) {}
     
-    size_t size(){
-        return g.size();
+    int size(){
+        return int(g.size());
     }
     
     void add_directed_edge(int from, int to, T cost = 1){
