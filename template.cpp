@@ -3,7 +3,7 @@
 using namespace std;
 using lint = long long;
 constexpr lint mod = 1e9 + 7;
-#define all(x) (x).begin(), (x).end()
+#define all(x) begin(x), end(x)
 #define bitcount(n) __builtin_popcountll((lint)(n))
 #define fcout cout << fixed << setprecision(15)
 #define highest(x) (63 - __builtin_clzll(x))
