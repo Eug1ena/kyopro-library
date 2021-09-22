@@ -114,6 +114,10 @@ verify: [https://atcoder.jp/contests/agc053/submissions/21690367](https://atcode
 
 ## その他
 
+### Geometry.cpp
+
+幾何テンプレート。[ここ](https://sen-comp.hatenablog.com/entry/2020/03/10/015751) を参考にした。<br>verify (dot, cross): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_A/judge/5899158/C++17verify (ccw): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_C/judge/5899164/C++17<br>verify (intersection系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_B/judge/5899167/C++17<br>verify (intersection系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_C/judge/5899173/C++17<br>verify (distance_between系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_D/judge/5899177/C++17<br>verify (projection): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_A/judge/5899185/C++17<br> verify (reflection): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_B/judge/5899187/C++17
+
 ### LargestRectangleInHistogram.cpp
 ヒストグラム中の最大長方形。stackを利用したO(N)解法。<br>
 verify: [https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/5428996/Euglena/C++14](https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/5428996/Euglena/C++14)
