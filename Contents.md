@@ -39,21 +39,28 @@ verify (RUQ): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/
 
 ### SegmentTreeBeats.cpp
 
-区間chmin/chmax/addと区間sumの取得ができるセグメント木。<br>verify: https://judge.yosupo.jp/submission/55830
+区間chmin/chmax/addと区間sumの取得ができるセグメント木。
+
+verify: https://judge.yosupo.jp/submission/55830
 
 ### BinaryIndexedTree.cpp
 
-一点加算とprefix和の取得ができるBinary Indexed Tree。<br>verify: https://old.yosupo.jp/submission/54164
+一点加算とprefix和の取得ができるBinary Indexed Tree。
+
+verify: https://old.yosupo.jp/submission/54164
 
 ### SparseTable.cpp
 
-抽象化されたSparse Table。<br>verify: https://judge.yosupo.jp/submission/59897
+抽象化されたSparse Table。
+
+verify: https://judge.yosupo.jp/submission/59897
 
 ### UnionFind.cpp
 Union-Find木。サイズの取得も可能。<br>
 
 ### UnionFindEdge.cpp
-辺情報の増えたUnion-Find木。辺の本数の取得が可能。<br>
+辺情報の増えたUnion-Find木。辺の本数の取得が可能。
+
 verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcoder.jp/contests/arc111/submissions/19296389)
 
 ### HLD.cpp, HLDCommutative.cpp, LazyHLDCommutative.cpp
@@ -68,44 +75,59 @@ verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcode
 
 ### LCA.cpp
 
-最小共通祖先と木上の距離。セグ木も使っているので注意。<br>verify: https://atcoder.jp/contests/abc014/submissions/25003425
+最小共通祖先と木上の距離。セグ木も使っているので注意。
+
+verify: https://atcoder.jp/contests/abc014/submissions/25003425
 
 ### GraphCollection.cpp
 
-最短経路。BFS, 01BFS, Dijkstraが利用できる。<br>移動できない頂点はdist[v]=-1になる。<br>erify (BFS): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/ALDS1_11_C/judge/5782056/C++17<br>verify (01BFS): https://atcoder.jp/contests/arc005/submissions/25002875<br>verify (Dijkstra):https://judge.yosupo.jp/submission/56419
+最短経路。BFS, 01BFS, Dijkstraが利用できる。<br>移動できない頂点はdist[v]=-1になる。
+
+verify (BFS): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/ALDS1_11_C/judge/5782056/C++17<br>verify (01BFS): https://atcoder.jp/contests/arc005/submissions/25002875<br>verify (Dijkstra):https://judge.yosupo.jp/submission/56419
 
 ### Lowlink.cpp
 
-O(V+E)でグラフの橋・関節点を検出する。is_bridge[i]="辺iが橋か"。<br>非連結だったり多重辺があってもok。<br>verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/GRL_3_A/judge/5782944/C++17
+O(V+E)でグラフの橋・関節点を検出する。is_bridge[i]="辺iが橋か"。<br>非連結だったり多重辺があってもok。
+
+verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/GRL_3_A/judge/5782944/C++17
 
 ### Diameter.cpp
-木の直径。<br>
+木の直径。
+
 verify: https://atcoder.jp/contests/typical90/submissions/25008504
 
 ## 数学
 
 ### FFT.cpp
 
-FFTによって高速化された多項式の畳み込み。<br>
+FFTによって高速化された多項式の畳み込み。
+
 verify: [https://atcoder.jp/contests/atc001/submissions/14417236](https://atcoder.jp/contests/atc001/submissions/14417236)
 
 ### XorConvolution.cpp
 
-高速アダマール変換(FWHT)によって高速化されたxorの畳み込み。<br>高速アダマール変換については [ここ](https://cympfh.cc/aiura/hadamard-xor-convolution) が詳しい。<br>verify: https://judge.yosupo.jp/submission/54616
+高速アダマール変換(FWHT)によって高速化されたxorの畳み込み。<br>高速アダマール変換については [ここ](https://cympfh.cc/aiura/hadamard-xor-convolution) が詳しい。
+
+verify: https://judge.yosupo.jp/submission/54616
 
 ### F2Linear.cpp
 
-F2線形代数。掃き出し法&rank計算のGaussJordan()と連立方程式を解くLinearEquation()がある。<br>verify (GaussJordan()): https://atcoder.jp/contests/yahoo-procon2019-qual/submissions/24720728<br>verify (LinearEquation()): まだ
+F2線形代数。掃き出し法&rank計算のGaussJordan()と連立方程式を解くLinearEquation()がある。
+
+verify (GaussJordan()): https://atcoder.jp/contests/yahoo-procon2019-qual/submissions/24720728<br>verify (LinearEquation()): まだ
 
 ### PowerSeries.cpp
 
-形式的冪級数。積はO(N^2)時間。<br>verify: https://atcoder.jp/contests/abl/submissions/25137726
+形式的冪級数。積はO(N^2)時間。
+
+verify: https://atcoder.jp/contests/abl/submissions/25137726
 
 ## 便利系
 
 ### Modint.cpp
 いわゆるModint。加減乗除、逆数、累乗、入出力の機能がある。<br>
-(小さな注意: "10-Modint(5)"はエラーを吐くので"-Modint(5)+10"と表記する)<br>
+(小さな注意: "10-Modint(5)"はエラーを吐くので"-Modint(5)+10"と表記する)
+
 verify: [https://atcoder.jp/contests/agc053/submissions/21690367](https://atcoder.jp/contests/agc053/submissions/21690367)
 
 ### Combination.cpp
@@ -116,21 +138,30 @@ verify: [https://atcoder.jp/contests/agc053/submissions/21690367](https://atcode
 
 ### Geometry.cpp
 
-幾何テンプレート。[ここ](https://sen-comp.hatenablog.com/entry/2020/03/10/015751) を参考にした。<br>verify (dot, cross): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_A/judge/5899158/C++17verify (ccw): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_C/judge/5899164/C++17<br>verify (intersection系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_B/judge/5899167/C++17<br>verify (intersection系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_C/judge/5899173/C++17<br>verify (distance_between系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_D/judge/5899177/C++17<br>verify (projection): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_A/judge/5899185/C++17<br> verify (reflection): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_B/judge/5899187/C++17
+幾何テンプレート。[ここ](https://sen-comp.hatenablog.com/entry/2020/03/10/015751) を参考にした。
+
+verify (dot, cross): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_A/judge/5899158/C++17<br>verify (ccw): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_C/judge/5899164/C++17<br>verify (intersection系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_B/judge/5899167/C++17<br>verify (intersection系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_C/judge/5899173/C++17<br>verify (distance_between系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_D/judge/5899177/C++17<br>verify (projection): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_A/judge/5899185/C++17<br> verify (reflection): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_B/judge/5899187/C++17
 
 ### LargestRectangleInHistogram.cpp
-ヒストグラム中の最大長方形。stackを利用したO(N)解法。<br>
+ヒストグラム中の最大長方形。stackを利用したO(N)解法。
+
 verify: [https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/5428996/Euglena/C++14](https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/5428996/Euglena/C++14)
 
 ### InversionNumber.cpp
 
-転倒数。引数には重複の無い数列のみ受け付ける。<br>verify: https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=5726662
+転倒数。引数には重複の無い数列のみ受け付ける。
+
+verify: https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=5726662
 
 ### SuffixArray.cpp
 
-Suffix ArrayとLCP Arrayを計算する。それぞれO(|S|log|S|), O(|S|)時間で動く。<br>verify (SA): https://judge.yosupo.jp/submission/55557<br>verify (LCP): https://judge.yosupo.jp/submission/55834
+Suffix ArrayとLCP Arrayを計算する。それぞれO(|S|log|S|), O(|S|)時間で動く。
+
+verify (SA): https://judge.yosupo.jp/submission/55557<br>verify (LCP): https://judge.yosupo.jp/submission/55834
 
 ### RollingHash.cpp
 
-ローリングハッシュ。<br>verify: https://onlinejudge.u-aizu.ac.jp/problems/ALDS1_14_B
+ローリングハッシュ。
+
+verify: https://onlinejudge.u-aizu.ac.jp/problems/ALDS1_14_B
 
