@@ -79,7 +79,7 @@ verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcode
 
 verify: https://atcoder.jp/contests/abc014/submissions/25003425
 
-### GraphCollection.cpp
+### ShortestPath.cpp
 
 最短経路。BFS, 01BFS, Dijkstraが利用できる。<br>移動できない頂点はdist[v]=-1になる。
 
