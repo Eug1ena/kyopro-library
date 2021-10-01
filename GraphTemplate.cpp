@@ -38,6 +38,10 @@ public:
     vector<Edge<T>>& operator [](int k){
         return g[k];
     }
+    
+    void resize(int n){
+        g.resize(n);
+    }
 };
 template<class T = int>
 using Edges = vector<Edge<T>>;
