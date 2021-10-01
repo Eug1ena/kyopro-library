@@ -4,7 +4,7 @@
 
 ### SegmentTree.cpp
 
-抽象化されたセグメント木。モノイドなら何でも入る。
+セグメント木。モノイドなら何でも入る。
 
 RSQの場合の例:
 
@@ -23,7 +23,7 @@ SegmentTree<int> seg(n, f, INT_MAX);
 verify (RSQ): https://judge.yosupo.jp/submission/54165<br>verify (RMQ): https://judge.yosupo.jp/submission/54166
 
 ### LazySegmentTree.cpp
-抽象化された遅延セグメント木。詳細な使い方は [別紙](HowToUseLazySeg.md) 参照。<br>
+遅延セグメント木。詳細な使い方は [別紙](HowToUseLazySeg.md) 参照。<br>
 
 ### DualSegmentTree.cpp
 
@@ -45,13 +45,13 @@ verify: https://judge.yosupo.jp/submission/55830
 
 ### BinaryIndexedTree.cpp
 
-一点加算とprefix和の取得ができるBinary Indexed Tree。
+Binary Indexed Tree。一点加算とprefix和の取得ができる。
 
 verify: https://old.yosupo.jp/submission/54164
 
 ### SparseTable.cpp
 
-抽象化されたSparse Table。
+Sparse Table。
 
 verify: https://judge.yosupo.jp/submission/59897
 
@@ -75,13 +75,13 @@ verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcode
 
 ### LCA.cpp
 
-最小共通祖先と木上の距離。セグ木も使っているので注意。
+最小共通祖先と木上の距離。
 
 verify: https://atcoder.jp/contests/abc014/submissions/25003425
 
 ### ShortestPath.cpp
 
-最短経路。BFS, 01BFS, Dijkstraが利用できる。<br>移動できない頂点はdist[v]=-1になる。
+最短経路。BFS, 01BFS, Dijkstraが利用できる。<br>移動できない頂点はdist[v]=INFになる。
 
 verify (BFS): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/ALDS1_11_C/judge/5782056/C++17<br>verify (01BFS): https://atcoder.jp/contests/arc005/submissions/25002875<br>verify (Dijkstra):https://judge.yosupo.jp/submission/56419
 
@@ -98,7 +98,7 @@ verify: https://atcoder.jp/contests/typical90/submissions/25008504
 
 ### SCC.cpp
 
-強連結成分分解。groupsが強連結成分のグループ、compが各頂点の属するグループの番号、dagが強連結成分を縮約したDAG。<br>グループの番号はトポロジカルソートの順番になっている。
+強連結成分分解。groupsが強連結成分のグループ、compが各頂点の属するグループの番号、dagが強連結成分を縮約したDAG。<br>グループの番号はdagにおけるトポロジカルソートの順番になっている。
 
 verify: https://judge.yosupo.jp/submission/62065
 
@@ -106,13 +106,13 @@ verify: https://judge.yosupo.jp/submission/62065
 
 ### FFT.cpp
 
-FFTによって高速化された多項式の畳み込み。
+FFTによる多項式の畳み込み。
 
 verify: [https://atcoder.jp/contests/atc001/submissions/14417236](https://atcoder.jp/contests/atc001/submissions/14417236)
 
 ### XorConvolution.cpp
 
-高速アダマール変換(FWHT)によって高速化されたxorの畳み込み。<br>高速アダマール変換については [ここ](https://cympfh.cc/aiura/hadamard-xor-convolution) が詳しい。
+高速アダマール変換(FWHT)による添字xorの畳み込み。<br>高速アダマール変換については [ここ](https://cympfh.cc/aiura/hadamard-xor-convolution) が詳しい。
 
 verify: https://judge.yosupo.jp/submission/54616
 
@@ -132,7 +132,6 @@ verify: https://atcoder.jp/contests/abl/submissions/25137726
 
 ### Modint.cpp
 いわゆるModint。加減乗除、逆数、累乗、入出力の機能がある。<br>
-(小さな注意: "10-Modint(5)"はエラーを吐くので"-Modint(5)+10"と表記する)
 
 verify: [https://atcoder.jp/contests/agc053/submissions/21690367](https://atcoder.jp/contests/agc053/submissions/21690367)
 
