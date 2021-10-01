@@ -96,6 +96,12 @@ verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/GRL_
 
 verify: https://atcoder.jp/contests/typical90/submissions/25008504
 
+### SCC.cpp
+
+強連結成分分解。groupsが強連結成分のグループ、compが各頂点の属するグループの番号、dagが強連結成分を縮約したDAG。<br>グループの番号はトポロジカルソートの順番になっている。
+
+verify: https://judge.yosupo.jp/submission/62065
+
 ## 数学
 
 ### FFT.cpp
