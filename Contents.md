@@ -67,6 +67,12 @@ verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcode
 
 それぞれ 一点更新区間取得、一点更新区間取得(可換性要求)、区間更新区間取得(可換性要求) のHL分解。<br>可換性を要求する方はしない方より更新が2倍速い。<br>詳細は [別紙](HowToUseHLDs.md) 参照のこと。
 
+### BinaryTrie.cpp
+
+2進数を扱うTrie木。初期化時にbit長も与えることができる。<br>要素の追加、削除、検索、k番目の取得が、bit数をBとしてO(B)でできる。
+
+vefify: https://atcoder.jp/contests/arc033/submissions/27195036<br>verify: https://yukicoder.me/submissions/715960
+
 ## グラフ
 
 ### GraphTemplate.cpp
