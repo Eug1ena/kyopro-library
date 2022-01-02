@@ -174,4 +174,4 @@ verify (SA): https://judge.yosupo.jp/submission/55557<br>verify (LCP): https://j
 
 mod 2^61-1のローリングハッシュ。
 
-verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/ALDS1_14_B/judge/5928160/C++17
+verify: https://atcoder.jp/contests/tenka1-2014-qualb/submissions/28286218

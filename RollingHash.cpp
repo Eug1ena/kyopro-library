@@ -35,7 +35,12 @@ struct RollingHash{
         return modulo(au * bu * 2 + midu + (midd << 31) + ad * bd);
     }
     
+    RollingHash() = default;
     RollingHash(string s){
+        set(s);
+    }
+    
+    void set(string s){
         sz = int(s.size());
         
         pow.assign(sz, 1);
@@ -66,5 +71,13 @@ struct RollingHash{
     
     ulint get(int l, int r){ // [l, r)
         return mul(modulo(data[r] - data[l] + MOD), powinv[l]);
+    }
+    
+    ulint get(){
+        return get(0, sz);
+    }
+    
+    int size(){
+        return sz;
     }
 };
