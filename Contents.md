@@ -116,6 +116,12 @@ FFTによる多項式の畳み込み。
 
 verify: [https://atcoder.jp/contests/atc001/submissions/14417236](https://atcoder.jp/contests/atc001/submissions/14417236)
 
+### NTT.cpp
+
+NTTによるmod 998244353の多項式の畳み込み。
+
+verify: https://atcoder.jp/contests/practice2/submissions/30714508
+
 ### XorConvolution.cpp
 
 高速アダマール変換(FWHT)による添字xorの畳み込み。<br>高速アダマール変換については [ここ](https://cympfh.cc/aiura/hadamard-xor-convolution) が詳しい。
