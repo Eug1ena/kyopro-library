@@ -1,6 +1,6 @@
 # 内容物 / Contents
 
-## データ構造
+## データ構造 (Data Structure)
 
 ### SegmentTree.cpp
 
@@ -73,7 +73,7 @@ verify: [https://atcoder.jp/contests/arc111/submissions/19296389](https://atcode
 
 vefify: https://atcoder.jp/contests/arc033/submissions/27195036<br>verify: https://yukicoder.me/submissions/715960
 
-## グラフ
+## グラフ (Graph)
 
 ### GraphTemplate.cpp
 
@@ -108,7 +108,7 @@ verify: https://atcoder.jp/contests/typical90/submissions/25008504
 
 verify: https://judge.yosupo.jp/submission/62065
 
-## 数学
+## 数学 (Math)
 
 ### FFT.cpp
 
@@ -140,22 +140,25 @@ verify (GaussJordan()): https://atcoder.jp/contests/yahoo-procon2019-qual/submis
 
 verify: https://atcoder.jp/contests/abl/submissions/25137726
 
-## 便利系
-
-### Modint.cpp
-いわゆるModint。加減乗除、逆数、累乗、入出力の機能がある。<br>
-
-verify: [https://atcoder.jp/contests/agc053/submissions/21690367](https://atcoder.jp/contests/agc053/submissions/21690367)
-
 ### Combination.cpp
 
 組合せ。
 
-## その他
+### Matrix.cpp
+
+行列。
+
+## その他 (Misc)
+
+### Modint.cpp
+
+いわゆるModint。加減乗除、逆数、累乗、入出力の機能がある。<br>
+
+verify: [https://atcoder.jp/contests/agc053/submissions/21690367](https://atcoder.jp/contests/agc053/submissions/21690367)
 
 ### Geometry.cpp
 
-幾何テンプレート。[ここ](https://sen-comp.hatenablog.com/entry/2020/03/10/015751) を参考にした。
+2次元幾何の諸々。[ここ](https://sen-comp.hatenablog.com/entry/2020/03/10/015751) を参考にした。
 
 verify (dot, cross): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_A/judge/5899158/C++17<br>verify (ccw): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_C/judge/5899164/C++17<br>verify (intersection系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_B/judge/5899167/C++17<br>verify (intersection系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_C/judge/5899173/C++17<br>verify (distance_between系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_D/judge/5899177/C++17<br>verify (projection): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_A/judge/5899185/C++17<br> verify (reflection): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_B/judge/5899187/C++17
 
