@@ -12,14 +12,15 @@ struct UnionFind{
         }
     }
     
-    void unite(int a, int b){
+    bool unite(int a, int b){
         a = find(a), b = find(b);
-        if(a == b) return;
+        if(a == b) return false;
         if(-data[a] < -data[b]){
             swap(a, b);
         }
         data[a] += data[b];
         data[b] = a;
+        return true;
     }
     
     int size(int k){

@@ -108,6 +108,12 @@ verify: https://atcoder.jp/contests/typical90/submissions/25008504
 
 verify: https://judge.yosupo.jp/submission/62065
 
+### MST.cpp
+
+クラスカル法で最小全域木を求める。
+
+verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/ALDS1_12_A/judge/6660885/C++17
+
 ## 数学 (Math)
 
 ### FFT.cpp
