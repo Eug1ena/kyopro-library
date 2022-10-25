@@ -168,7 +168,14 @@ verify: [https://atcoder.jp/contests/agc053/submissions/21690367](https://atcode
 
 verify (dot, cross): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_A/judge/5899158/C++17<br>verify (ccw): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_C/judge/5899164/C++17<br>verify (intersection系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_B/judge/5899167/C++17<br>verify (intersection系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_C/judge/5899173/C++17<br>verify (distance_between系): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_2_D/judge/5899177/C++17<br>verify (projection): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_A/judge/5899185/C++17<br> verify (reflection): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/CGL_1_B/judge/5899187/C++17
 
+### ConvexHull.cpp
+
+蟻本に載っているグラハムスキャンという手法で凸包を求める。O(NlogN)時間。<br>凸包の頂点は反時計回りに並べて返される。
+
+verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/0068/judge/7054203/C++14
+
 ### LargestRectangleInHistogram.cpp
+
 ヒストグラム中の最大長方形。stackを利用したO(N)解法。
 
 verify: [https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/5428996/Euglena/C++14](https://onlinejudge.u-aizu.ac.jp/solutions/problem/DPL_3_C/review/5428996/Euglena/C++14)
