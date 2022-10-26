@@ -114,6 +114,12 @@ verify: https://judge.yosupo.jp/submission/62065
 
 verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/ALDS1_12_A/judge/6660885/C++17
 
+### FordFulkerson.cpp
+
+最大流。当然最小カットも解ける。
+
+verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/GRL_6_A/judge/7057609/C++14
+
 ## 数学 (Math)
 
 ### FFT.cpp
