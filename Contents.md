@@ -91,6 +91,12 @@ verify: https://atcoder.jp/contests/abc014/submissions/25003425
 
 verify (BFS): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/ALDS1_11_C/judge/5782056/C++17<br>verify (01BFS): https://atcoder.jp/contests/arc005/submissions/25002875<br>verify (Dijkstra):https://judge.yosupo.jp/submission/56419
 
+### BellmanFord.cpp
+
+ベルマンフォード法による最短経路。O(VE)時間。<br>負閉路の検出や、負閉路を鑑みて最短経路を求めたりできる。<br>移動できない頂点はdist[v]=INF、いくらでも距離を短くできる頂点はdist[v]=-g.INFになる。
+
+verify (負閉路検出): https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/GRL_1_B/judge/7061196/C++14<br>verify (負閉路を鑑みた最短経路): https://atcoder.jp/contests/abc137/submissions/36010964 
+
 ### Lowlink.cpp
 
 O(V+E)でグラフの橋・関節点を検出する。is_bridge[i]="辺iが橋か"。<br>非連結だったり多重辺があってもok。
