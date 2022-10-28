@@ -122,9 +122,15 @@ verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/ALDS
 
 ### FordFulkerson.cpp
 
-最大流。当然最小カットも解ける。
+Ford-Fulkerson法による最大流。最悪計算量はO(FE)。<br>もちろん最小カットも解ける。
 
 verify: https://onlinejudge.u-aizu.ac.jp/status/users/Euglena/submissions/1/GRL_6_A/judge/7057609/C++14
+
+### MinCostFlow.cpp
+
+Primal-Dual法による最小費用流。辺のコストは非負整数に限る。<br>内部ではポテンシャルを使ってダイクストラ法を動かしており、最悪計算量はO(FElogE)。
+
+verify: https://atcoder.jp/contests/practice2/submissions/36013215
 
 ## 数学 (Math)
 
