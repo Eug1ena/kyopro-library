@@ -77,7 +77,7 @@ vefify: https://atcoder.jp/contests/arc033/submissions/27195036<br>verify: https
 
 ### GraphTemplate.cpp
 
-グラフライブラリのテンプレート。<br>以下のグラフライブラリは一部C++14以前では動作しない。( [テンプレート推論 ](https://cpprefjp.github.io/lang/cpp17/type_deduction_for_class_templates.html)をしているため)<br>
+グラフライブラリのテンプレート。<br>~~以下のグラフライブラリは一部C++14以前では動作しない。( [テンプレート推論 ](https://cpprefjp.github.io/lang/cpp17/type_deduction_for_class_templates.html)をしているため)~~ 改修してC++14でも動作するようにしました。<br>
 
 ### LCA.cpp
 

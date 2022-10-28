@@ -22,20 +22,20 @@ public:
     
     explicit Graph(int n) : g(n) {}
     
-    int size(){
+    int size() const {
         return int(g.size());
     }
     
     void add_directed_edge(int from, int to, T cost = 1){
-        g[from].push_back(Edge(from, to, cost, edge_cnt++));
+        g[from].push_back(Edge<T>(from, to, cost, edge_cnt++));
     }
     
     void add_edge(int from, int to, T cost = 1){
-        g[from].push_back(Edge(from, to, cost, edge_cnt));
-        g[to].push_back(Edge(to, from, cost, edge_cnt++));
+        g[from].push_back(Edge<T>(from, to, cost, edge_cnt));
+        g[to].push_back(Edge<T>(to, from, cost, edge_cnt++));
     }
     
-    vector<Edge<T>>& operator [](int k){
+    const vector<Edge<T>>& operator [](int k) const {
         return g[k];
     }
     
